@@ -226,4 +226,3 @@
       RETURN
 
       END SUBROUTINE USR_RATES_DES
-      
