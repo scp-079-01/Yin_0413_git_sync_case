@@ -194,7 +194,7 @@
       if (DES_X_s(NP,BiomassCore) > c_Limiter) then
          A_i=5d6     !   Ku,2015==>Prakash,2008; Also in Wang shuai,2019
          E_i=1.2d5   !   Original=1.2d8, reduced with 8314;
-         DES_RATES(Pyrolysis) = A_i * exp(-E_i/(8.3147295*xTs)) * pmass(NP)*DES_X_s(NP,BiomassCore)/MW_s(1,BiomassCore) *1e-2 
+         DES_RATES(Pyrolysis) = A_i * exp(-E_i/(8.3147295*xTs)) * pmass(NP)*DES_X_s(NP,BiomassCore)/MW_s(1,BiomassCore) 
          !1e-2 only for debug, please remove when it is good
       else 
          DES_RATES(Pyrolysis)=ZERO
